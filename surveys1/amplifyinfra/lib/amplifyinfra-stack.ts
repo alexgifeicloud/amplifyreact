@@ -10,7 +10,7 @@ export class AmplifyinfraStack extends cdk.Stack {
 
     const amplifyApp = new amplify.App(this, 'surveys1', {
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
-        owner: 'alexgifeicloud',
+        owner: 'alexgifeicloud@gmail.com',
         repository: 'amplifyreact',
         oauthToken: cdk.SecretValue.plainText('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')
       }),
