@@ -16,7 +16,7 @@ export class Surveys2InfraStack extends cdk.Stack {
 
     const master = amplifyApp.addBranch('master'); // `id` will be used as repo branch name
     const dev = amplifyApp.addBranch('dev');
-    master.addEnvironment('AMPLIFY_MONOREPO_APP_ROOT', 'surveys2');
-    dev.addEnvironment('AMPLIFY_MONOREPO_APP_ROOT', 'surveys2');
+    master.addEnvironment('AMPLIFY_MONOREPO_APP_ROOT', 'amplifyreact/surveys2');
+    dev.addEnvironment('AMPLIFY_MONOREPO_APP_ROOT', 'amplifyreact/surveys2');
   }
 }
